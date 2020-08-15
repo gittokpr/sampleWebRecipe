@@ -1,0 +1,5 @@
+<div class="container ml-5 pt-5">
+  <h2 class="title">Recipe's List</h2>
+  <app-recipie-item *ngFor="let recipeItem of recipeList" [recipe]="recipeItem" (click)="onSelected(recipeItem)">
+  </app-recipie-item>
+</div>

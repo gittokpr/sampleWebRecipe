@@ -1,0 +1,17 @@
+<div class="container ml-5 pt-5">
+  <div>
+    <app-shopping-edit (ingredientAdded)="addIngredient($event)"></app-shopping-edit>
+  </div>
+  <div>
+    <h2 class="title">Shopping List</h2>
+    <div class="columns">
+      <div class="column">
+        <ul class="panel">
+          <a class="panel-block" *ngFor="let ingredient of ingredients">
+            {{ ingredient.name }} ({{ ingredient.amount }})
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

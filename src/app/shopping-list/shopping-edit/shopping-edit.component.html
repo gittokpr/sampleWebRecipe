@@ -1,0 +1,27 @@
+<form>
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field edit-name">
+        <p class="control">
+          <input type="text" class="input" placeholder="Name" #inputName>
+        </p>
+      </div>
+      <div class="field edit-quantity">
+        <p class="control is-small">
+          <input type="number" class="input" placeholder="Amount" #inputAmount>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-primary" type="submit" (click)="onSubmit()">Submit</button>
+    </div>
+    <div class="control">
+      <button class="button is-danger">Delete</button>
+    </div>
+    <div class="control">
+      <button class="button is-link">Clear</button>
+    </div>
+  </div>
+</form>

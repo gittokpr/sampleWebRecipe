@@ -1,0 +1,17 @@
+<nav class="navbar is-dark" role="navigation">
+  <div class="navbar-brand">
+    <a href="#" class="navbar-item">RECIPE'S</a>
+    <a role="button" class="navbar-burger burger"
+      onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');" data-target="navbarData">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+  <div id="navbarData" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="#" class="navbar-item" (click)="onNavClicked('recipe')">Recipe</a>
+      <a href="#" class="navbar-item" (click)="onNavClicked('shoppingList')">Shopping List</a>
+    </div>
+  </div>
+</nav>

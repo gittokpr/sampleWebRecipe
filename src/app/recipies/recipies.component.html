@@ -1,0 +1,11 @@
+<div class="columns">
+  <div class="column is-5">
+    <app-recipie-list (selectedRecipe)="selRecipe = $event"></app-recipie-list>
+  </div>
+  <div class="column is-7">
+    <app-recipie-detail *ngIf="selRecipe; else infoText" [recipe]="selRecipe"></app-recipie-detail>
+    <ng-template #infoText>
+      <p>Please Select a Recipe</p>
+    </ng-template>
+  </div>
+</div>

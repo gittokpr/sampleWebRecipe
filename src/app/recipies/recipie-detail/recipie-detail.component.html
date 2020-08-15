@@ -1,0 +1,24 @@
+<div class="container ml-2 pt-5">
+  <h2 class="title">{{recipe.name}}</h2>
+  <figure class="image is-medium">
+    <img [src]="recipe.img" alt="{{recipe.name}}">
+  </figure>
+  <div class="dropdown" (click)="makeActive()" [ngClass]="{'is-active': isActive}">
+    <div class="dropdown-trigger">
+      <button class="button">
+        <span>Manage Recipe</span>
+        <span class="icon is-small">
+          <i class="fas fa-angle-down"></i>
+        </span>
+      </button>
+    </div>
+    <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+      <div class="dropdown-content">
+        <a href="#" class="dropdown-item">Description</a>
+        <a href="#" class="dropdown-item">Ingredients</a>
+      </div>
+    </div>
+  </div>
+  <p>{{recipe.desc}}</p>
+  <p>Ingredients</p>
+</div>
